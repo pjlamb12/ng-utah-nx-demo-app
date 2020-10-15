@@ -1,0 +1,16 @@
+<nav>
+  <div>
+    <p>
+      <a routerLink="/">
+        {{ appName }}
+      </a>
+    </p>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let link of links">
+        <a [routerLink]="[link.url]">{{ link.display }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
