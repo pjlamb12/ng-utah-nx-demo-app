@@ -29,6 +29,13 @@
     "ng-utah-web-e2e": {
       "tags": [],
       "implicitDependencies": ["ng-utah-web"]
+    },
+    "ng-utah-admin": {
+      "tags": []
+    },
+    "ng-utah-admin-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ng-utah-admin"]
     }
   }
 }
