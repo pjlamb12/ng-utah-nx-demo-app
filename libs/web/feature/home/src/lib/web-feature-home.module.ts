@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   imports: [
@@ -10,5 +11,6 @@ import { RouterModule } from '@angular/router';
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ]),
   ],
+  declarations: [HomepageComponent],
 })
 export class WebFeatureHomeModule {}
