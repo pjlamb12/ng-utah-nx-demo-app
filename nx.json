@@ -39,6 +39,12 @@
     },
     "shared-components": {
       "tags": ["scope:shared", "type:ui"]
+    },
+    "web-feature-home": {
+      "tags": ["scope:web", "type:feature"]
+    },
+    "admin-feature-home": {
+      "tags": ["scope:admin", "type:feature"]
     }
   }
 }

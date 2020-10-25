@@ -10,7 +10,7 @@
       },
       "root": "apps/ng-utah-web",
       "sourceRoot": "apps/ng-utah-web/src",
-      "prefix": "ng-utah",
+      "prefix": "ngu",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -126,7 +126,7 @@
       },
       "root": "apps/ng-utah-admin",
       "sourceRoot": "apps/ng-utah-admin/src",
-      "prefix": "ng-utah",
+      "prefix": "ngu",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -237,7 +237,7 @@
       "projectType": "library",
       "root": "libs/shared/components",
       "sourceRoot": "libs/shared/components/src",
-      "prefix": "ng-utah",
+      "prefix": "ngu",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
@@ -249,6 +249,58 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/shared/components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "web-feature-home": {
+      "projectType": "library",
+      "root": "libs/web/feature/home",
+      "sourceRoot": "libs/web/feature/home/src",
+      "prefix": "ngu",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/web/feature/home/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/web/feature/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "admin-feature-home": {
+      "projectType": "library",
+      "root": "libs/admin/feature/home",
+      "sourceRoot": "libs/admin/feature/home/src",
+      "prefix": "ngu",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/admin/feature/home/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/admin/feature/home/jest.config.js",
             "passWithNoTests": true
           }
         }

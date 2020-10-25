@@ -8,7 +8,18 @@ import { AppComponent } from './app.component';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(
+      [
+        {
+          path: 'admin-feature-home',
+          loadChildren: () =>
+            import('@ng-utah/admin/feature/home').then(
+              (module) => module.AdminFeatureHomeModule
+            ),
+        },
+      ],
+      { initialNavigation: 'enabled' }
+    ),
     SharedComponentsModule,
   ],
   providers: [],

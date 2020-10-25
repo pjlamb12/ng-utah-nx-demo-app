@@ -16,7 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ng-utah/shared/components": ["libs/shared/components/src/index.ts"]
+      "@ng-utah/shared/components": ["libs/shared/components/src/index.ts"],
+      "@ng-utah/web/feature/home": ["libs/web/feature/home/src/index.ts"],
+      "@ng-utah/admin/feature/home": ["libs/admin/feature/home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
