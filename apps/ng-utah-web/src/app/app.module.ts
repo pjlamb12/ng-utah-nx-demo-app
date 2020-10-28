@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
     RouterModule.forRoot(
       [
         {
-          path: 'web-feature-home',
+          path: '',
           loadChildren: () =>
             import('@ng-utah/web/feature/home').then(
               (module) => module.WebFeatureHomeModule
