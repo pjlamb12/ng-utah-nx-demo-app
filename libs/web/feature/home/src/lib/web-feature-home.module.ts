@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     CommonModule,
 
     RouterModule.forChild([
+      { path: '', component: HomepageComponent },
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ]),
   ],
